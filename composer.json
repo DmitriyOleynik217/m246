@@ -1,0 +1,161 @@
+{
+    "name": "magento/project-community-edition",
+    "description": "eCommerce Platform for Growth (Community Edition)",
+    "type": "project",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "laminas/laminas-dependency-plugin": true,
+            "magento/*": true,
+            "php-http/discovery": true
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "version": "2.4.6",
+    "require": {
+        "magento/composer-dependency-version-audit-plugin": "~0.1",
+        "magento/composer-root-update-plugin": "~2.0",
+        "magento/module-bundle-sample-data": "100.4.*",
+        "magento/module-catalog-rule-sample-data": "100.4.*",
+        "magento/module-catalog-sample-data": "100.4.*",
+        "magento/module-cms-sample-data": "100.4.*",
+        "magento/module-configurable-sample-data": "100.4.*",
+        "magento/module-customer-sample-data": "100.4.*",
+        "magento/module-downloadable-sample-data": "100.4.*",
+        "magento/module-grouped-product-sample-data": "100.4.*",
+        "magento/module-msrp-sample-data": "100.4.*",
+        "magento/module-offline-shipping-sample-data": "100.4.*",
+        "magento/module-product-links-sample-data": "100.4.*",
+        "magento/module-review-sample-data": "100.4.*",
+        "magento/module-sales-rule-sample-data": "100.4.*",
+        "magento/module-sales-sample-data": "100.4.*",
+        "magento/module-swatches-sample-data": "100.4.*",
+        "magento/module-tax-sample-data": "100.4.*",
+        "magento/module-theme-sample-data": "100.4.*",
+        "magento/module-widget-sample-data": "100.4.*",
+        "magento/module-wishlist-sample-data": "100.4.*",
+        "magento/product-community-edition": "2.4.6",
+        "magento/sample-data-media": "100.4.*",
+        "studioraz/magento2-creditguard": "@dev"
+    },
+    "autoload": {
+        "exclude-from-classmap": [
+            "**/dev/**",
+            "**/update/**",
+            "**/Test/**"
+        ],
+        "files": [
+            "app/etc/NonComposerComponentRegistration.php"
+        ],
+        "psr-0": {
+            "": [
+                "app/code/",
+                "generated/code/"
+            ]
+        },
+        "psr-4": {
+            "Magento\\": "app/code/Magento/",
+            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+            "Magento\\Setup\\": "setup/src/Magento/Setup/"
+        }
+    },
+    "require-dev": {
+        "allure-framework/allure-phpunit": "^2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+        "dg/bypass-finals": "^1.4",
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "lusitanian/oauth": "^0.8",
+        "magento/magento-coding-standard": "*",
+        "magento/magento2-functional-testing-framework": "^4.2.1",
+        "pdepend/pdepend": "^2.10",
+        "phpmd/phpmd": "^2.12",
+        "phpstan/phpstan": "^1.9",
+        "phpunit/phpunit": "^9.5",
+        "sebastian/phpcpd": "^6.0",
+        "symfony/finder": "^5.4"
+    },
+    "conflict": {
+        "gene/bluefoot": "*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Magento\\PhpStan\\": "dev/tests/static/framework/Magento/PhpStan/",
+            "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
+            "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
+            "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/",
+            "Magento\\Tools\\": "dev/tools/Magento/Tools/",
+            "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false,
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "local-src/studioraz/*",
+            "options": {
+                "symlink": true
+            }
+        },
+        "mirasvit-arp2": {
+            "type": "composer",
+            "url": "https://61073:HA8ZVL65CU@packages.mirasvit.com/61073:HA8ZVL65CU/"
+        },
+        "mirasvit-clb2": {
+            "type": "composer",
+            "url": "https://33839:ASU57MYXWZ@packages.mirasvit.com/33839:ASU57MYXWZ/"
+        },
+        "mirasvit-pkt2": {
+            "type": "composer",
+            "url": "https://59891:R7KF1ZOM4S@packages.mirasvit.com/59891:R7KF1ZOM4S/"
+        },
+        "hyva-themes/magento2-cms-tailwind-jit": {
+            "type": "composer",
+            "url": "https://studioraz.repo.packagist.com/thecompany-biz/"
+        },
+        "mirasvit-fmb2": {
+            "type": "composer",
+            "url": "https://56268:MVJT8E9KWD@packages.mirasvit.com/56268:MVJT8E9KWD/"
+        },
+        "firebear": {
+            "type": "composer",
+            "url": "https://firebearstudio.com/composer/download/package/type/ce/user/4e700dc91277c90aa875260e0e2a5cb6/password/45a1cfcea8fb3b00b7abc93e6f57a929/"
+        },
+        "mirasvit-lrn2": {
+            "type": "composer",
+            "url": "https://60253:EXNOKR5J3V@packages.mirasvit.com/60253:EXNOKR5J3V/"
+        },
+        "studioraz-private-packagist": {
+            "type": "composer",
+            "url": "https://studioraz.repo.packagist.com/thecompany-biz/"
+        },
+        "mirasvit-advr2": {
+            "type": "composer",
+            "url": "https://44446:SRI6CFHP5L@packages.mirasvit.com/44446:SRI6CFHP5L/"
+        },
+        "mirasvit-esu2": {
+            "type": "composer",
+            "url": "https://58594:N2GOR4LEMK@packages.mirasvit.com/58594:N2GOR4LEMK/"
+        },
+        "hyva-private-packagist": {
+            "type": "composer",
+            "url": "https://hyva-themes.repo.packagist.com/ha-sayeret-co-il/"
+        },
+        "amasty": {
+            "type": "composer",
+            "url": "https://composer.amasty.com/community/"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    },
+    "extra": {
+        "magento-force": "override"
+    }
+}

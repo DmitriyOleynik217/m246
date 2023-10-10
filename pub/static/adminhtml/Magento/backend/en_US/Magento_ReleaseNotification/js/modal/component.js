@@ -1,0 +1,1 @@
+/var/www/magento2/m246/vendor/magento/module-release-notification/view/adminhtml/web/js/modal/component.js

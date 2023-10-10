@@ -1,0 +1,62 @@
+/*
+ * Copyright © 2022 Studio Raz. All rights reserved.
+ * See LICENCE file for license details.
+ */
+
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .checkout-payment-method {
+        .payment-method-content {
+            .field:not(:first-child) {
+                margin: 10px 0;
+            }
+            .payment-icon {
+                display: inline-block;
+                margin-right: @indent__xs;
+                vertical-align: middle;
+            }
+        }
+    }
+    .checkout-agreement {
+        .error[generated="true"] {
+            color: #e02b27;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 100%;
+        }
+    }
+
+    .popup-srcreditguard-payment-method {
+        .modal-inner-wrap {
+            width: 360px !important;
+            /*rtl:ignore*/
+            transform: translate(50%,-55%) !important;
+            top: 50% !important;
+            /*rtl:ignore*/
+            right: 50% !important;
+            /*rtl:ignore*/
+            position: absolute !important;
+            margin: 0 !important;
+            /*rtl:ignore*/
+            left: auto !important;
+            /*rtl:ignore*/
+            border-radius: 15px !important;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+    .checkout-index-index {
+        .popup-srcreditguard-payment-method {
+            .modal-inner-wrap {
+
+
+            }
+        }
+    }
+
+}

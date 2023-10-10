@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright © 2020 Studio Raz. All rights reserved.
+  ~ See LICENSE.txt for license details.
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!-- NOTE: sortOrder="999000" - to position Tab-Item before Advanced -->
+        <tab id="studioraz" translate="label" sortOrder="999000" class="studioraz-tab srbase-tab-container">
+            <label>StudioRaz</label>
+        </tab>
+
+        <section id="srbase" translate="label" type="text" sortOrder="-1000" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Extensions</label>
+            <tab>studioraz</tab>
+            <resource>SR_Base::extensions</resource>
+
+            <group id="extensions" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Installed Modules</label>
+                <frontend_model>SR\Base\Block\Adminhtml\System\Config\Fieldset\Extensions</frontend_model>
+            </group>
+        </section>
+    </system>
+</config>

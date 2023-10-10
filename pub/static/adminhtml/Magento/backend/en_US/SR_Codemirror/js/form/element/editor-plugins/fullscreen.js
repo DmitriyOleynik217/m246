@@ -1,0 +1,1 @@
+/var/www/magento2/m246/vendor/studioraz/magento2-codemirror/view/base/web/js/form/element/editor-plugins/fullscreen.js
